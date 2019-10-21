@@ -4,7 +4,7 @@ function map(arr, handleFunction) {
   const length = arr.length;
   for (let i = 0; i < length; i++) {
     const result = handleFunction(arr[i]);
-    newArr.push(result);
+    newArr.push(result);    
   }
   return newArr;
 };
@@ -64,18 +64,15 @@ console.log(find(agesFind, checkAdult));
 //--- CLONE DEEP -----
 
 
-let testObject = {
+const testObject = {
   a: 1,
   b: 2,
-  c: 3,
-  fullName : function() {
-    return this.firstName + " " + this.lastName;
-  }
+  c: 3
 };
-var cloned = JSON.parse(JSON.stringify(testObject));
+const cloned = JSON.parse(JSON.stringify(testObject));
 
 console.log(cloned);
-// cloned.a = 2;
+cloned.a = 2;
 console.log(cloned);
 console.log(testObject);
 
