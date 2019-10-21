@@ -80,8 +80,7 @@ console.log(testObject);
 
 //--- CONCAT -----
 function concat(arr1, arr2) {
-  const result = arr1.join(',') + ',' + arr2.join(',');
-  return result;
+  return arr1.join(',') + ',' + arr2.join(',');
 }
 
 const hege = ["Cecilie", "Lone"];
