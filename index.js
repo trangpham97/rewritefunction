@@ -20,9 +20,9 @@ const filter = arr => func => {
 
 //--- FIND -----
 const find = arr => func => {
-  for(const element of arr){
-    if (func(element) === true) {   
-      return element;    
+  for (const element of arr) {
+    if (func(element) === true) {
+      return element;
     }
   }
 }
